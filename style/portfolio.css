@@ -47,17 +47,6 @@ nav ul {
     background: #ff8730;
 }
 
-.contact-btn{
-    font-weight: 700;
-    font-size: 15px;
-    width: 160px;
-    height: 64px;
-    border: 1px solid  #FD6E0A;
-    padding: 18px 35px;
-    margin-left: 30px;
-    background: #FFF8F3;
-    border-radius: 5px;
-}
 
 .contact-btn:hover{
     background-color: #fae6d7;
@@ -206,11 +195,41 @@ section{
 
 /* Responsive Style */
 @media screen and (max-width: 576px) {
-    .skills-container, .porject-container,.about-title-container {
-        flex-direction: column;
-        padding: 10px;
-        
+    nav{
+        margin: 5px;
+        padding: 20px;
     }
+    nav ul {
+        flex-direction: column;
+        margin: 0px;
+        gap: 15px;
+    }
+    header{
+        background-image: none;
+    }
+    .dev-name{
+        font-size: 50px;
+    }
+
+    .banner{
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .skills-container,
+    .porject-container,
+    .about-title-container, 
+    .contact{
+        flex-direction: column;
+        gap: 20px;;
+        padding: 10px 20px;        
+    }
+
+    .contact input[type="text"], [type="email"], textarea{
+        padding: 0;
+    }
+
 }
 
 
@@ -218,8 +237,13 @@ section{
     .skills-container{
         
     }
-}
-
-.hide{
-    display: none;
+    .about{
+        padding: 20px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .skills-container{
+ 
+    }
 }
